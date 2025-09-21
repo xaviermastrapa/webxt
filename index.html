@@ -1,113 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XaviTech Reparaciones</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>XaviTech</title>
+    <link rel="stylesheet" href="ccs/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
+    <!-- barra de las redes sociales -->
+    <nav class="nav">
+        <div class="nav__redes">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
 
+        <!-- barra de navegacion -->
+        <div class="nav__navbar">
+        
+            <a href="#" class="nav__logo"><img src="images/logoblanco.png" alt="logo de la empresa"></a>
+            
+            <button class="nav__btn" id="menuBtn">☰</button>
+
+            <ul class="nav__list" id="navList">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Incio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Tienda" class="nav__link">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Servicios" class="nav__link">Servicios</a>
+                </li>
+            </ul>
+
+            <script src="JS/menu.js"></script>     
+            
+
+            <a href="#Contacto" class="nav__contacto nav__link">Contacto</a>
+
+        </div>
+        <!-- barra para descargar contrato -->
+        <div class="nav__contrato">
+            <h3>¿Eres Empresa y Te Interesan Nuestros Servicios?</h3>
+            <a href="documentos/Contrato XaviTech.doc" download>Descargue aquí nuestro contrato</a><a href="documentos/Precios XaviTech(Anexo 1).docx" download=""> y Aquí Nuestros Precios</a>
+        </div>
+
+        
+    </nav>
+    <!-- contiene la info de la empresa y botones para ir a las diferentes secciones -->
     <header class="header">
-        <div class="menu container">
-            <a href="#" class="logo">XaviTech</a>
-            <input type="checkbox" id="menu">
-            <label for="menu"><img src="images/menu.png" class="menu-icono" alt="menu"></label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>             
-            </nav>
+        <div class="header__container">
+
+        <div class="header__titlecontainer">
+        <h1 class="header__title">
+            Tienda, Reparaciones y Software
+        </h1>
+        <h2 class="header__subtitle">
+            Soluciones Tecnológicas Integrales
+        </h2>
+        <h3 class="header__h3">
+            ¿Qué podemos hacer por ti hoy?
+        </h3>
         </div>
 
-        <div class="header-content">
-            <div class="header-info">
-                <h1>Servicio de Reparación</h1>
-                <p>Servicio Rápido y con Garantía</p>                
-                <a href="https://wa.link/vpr3l0" class="btn-1" target="_blank"><img src="ico/wsp.png" class="wsp-btn"></img></a>
-            </div>
+        
+
+            <div class="header__linkcontainer">
+
+            <a href="" class="linkcontainer__a">
+
+                <div class="icon__container">
+                    <i class="fas fa-tools fa-3x"></i>
+                </div>
+               
+                <h2 class="icon__h2">Servicios</h2>
+            </a>
+
+            <a href="" class="linkcontainer__a">
+
+                <div class="icon__container">
+                    <i class="fas fa-store fa-3x"></i>
+                </div>
+                <h2 class="icon__h2">Tienda</h2>
+            </a>
+
+
+            <a href="" class="linkcontainer__a">
+
+                <div class="icon__container">
+                    <i class="fas fa-code fa-3x"></i>
+                </div>
+
+                <h2 class="icon__h2">Software</h2>
+            </a>                     
+
         </div>
+
+
+    
+
+        
+
+
+
+        <div class="header__localizarreparacion">
+                <a href="">Localiza tu reparación</a>
+            </div> 
+
+        </div>
+
+        <div class="header__imagen">
+            <img class="header__img" src="images/pcbg.png">
+        </div>
+        
     </header>
 
-    <section class="gym container">
-        <div class="gym-1">
-            <h2><span>Reparación</span> de equipos de refrigeración</h2>
-            <p>Brindamos soluciones confiables para todo tipo de aires acondicionados y sistemas de refrigeración.Mantenimiento, reparación y servicio técnico con atención rápida y garantía.
-            Confía en profesionales, llámanos hoy.</p>
-            <a href="#" class="btn-2">Ver Mas</a>
-        </div>
-        <!--Galeria de Imagenes con Slider-->
-        <div class="gym-2 slider-box">
-            <ul>
-                <li><img class="img-1" src="images/aire1.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/aire2.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/aire3.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/aire4.jpg" alt="YM"></li>
+    <main class="main">
+
+        <section class="tienda">
+
+            <h2 class="tienda__title"><span>Equipos</span> Electrónicos</h2>
+            <h3 class="tienda__subtitle">Nos importa su confianza: garantía en cada equipo que adquieras.</h3>
+
+            <!-- tarjetas de reparacion -->
+            <div class="tienda__cardscontainer">
+
+            <a href="" class="tienda__cards tienda__cards-img--width">
+                <img src="images/TecnoGo1s.jpg" alt="" class="tienda__cards-img">
+                <h3>Celulares</h3>
+            </a>
+
+            <a href="" class="tienda__cards">
+                <img src="images/Laptop.png" alt="" class="tienda__cards-img ">
+                <h3>Laptops</h3>
+            </a>
+
+            <a href="" class="tienda__cards">
+                <img src="images/pcrepair.png" alt="" class="tienda__cards-img">
+                <h3>Artículos de PC</h3>
+            </a>
+
+            <a href="" class="tienda__cards">
+                <img src="images/ecoflow.png" alt="" class="tienda__cards-img">
+                <h3>Electrodomésticos</h3>
+            </a>
+
+
+            </div>
+            
+
+        </section>
+
+        <!-- Desarrollo de Software -->
+        <section class="software">
+
+            
+
+            <div class="software__container">
+                <img src="images/web.jpg" alt="" class="software__imagen">
+                <hgroup class="software__hgroup">
+                <h1>
+                    Creación de Páginas Webs 
+                </h1>    
+                <h2 class="software__h2">
+                    Creamos aplicaciones web a la medida: desde landing pages hasta sistemas escalables, diseñados al detalle según las necesidades de tu negocio
+                </h2>
+                <h3>
+                    Nos especializamos en soluciones digitales que impulsan tu presencia en línea y optimizan tus procesos internos.
+                </h3>
+
+
+                </hgroup>
                 
-            </ul>
-            
-            
+            </div>
 
-        </div>
-        <!--Galeria de Imagenes con Slider-->
-    </section>
+            <div class="software__container">
+
+                <img src="images/tabletcodigo.png" alt="" class="software__img--dropshadow software__imagen">
+                <hgroup class="software__hgroup hgroup">
+                <h1>
+                    Aplicaciones de Escritorio y Automatización 
+                </h1>    
+                <h2>
+                    Desarrollamos aplicaciones personalizadas y automatizaciones que aumentan la productividad de tu empresa y la de tus colaboradores.
+                </h2>
+                <h3>
+                    Integramos herramientas que facilitan el trabajo diario, reducen errores y ahorran tiempo, adaptadas a tus objetivos y flujo de trabajo.
+                </h3>
+
+
+                </hgroup>
+                
+            </div>
+
+
+
+        </section>
+
+        <section class="reparacion">
+
+            <h2 class="reparacion__title">
+                <span>Servicios</span> de Reparación
+            </h2>
+            <div class="reparacion__container">
+
+                <a href="" class="reparacion__card">
+                    <img src="images/telefonorepair.jpg" alt="" class="reparacion__img">
+                    <h2 class="reparacion__card-title">
+                    Reparación de teléfonos   
+                    </h2>
+                </a>
+
+                <a href="" class="reparacion__card">
+                    <img src="images/pcrepair.png" alt="" class="reparacion__img">
+                    <h2 class="reparacion__card-title">
+                    Reparación de computadoras   
+                    </h2>
+                </a>
+
+                <a href="" class="reparacion__card">
+                    <img src="images/tabletrepair.jpg" alt="" class="reparacion__img">
+                    <h2 class="reparacion__card-title">
+                    Reparación de tablets   
+                    </h2>
+                </a>
+
+                <a href="" class="reparacion__card">
+                    <img src="images/instalacionesdomicilio.png" alt="" class="reparacion__img">
+                    <h2 class="reparacion__card-title">
+                    Instalaciones adomicilio   
+                    </h2>
+                </a>
+
+                <a href="" class="reparacion__card">
+                    <img src="images/ventilador2.png" alt="" class="reparacion__img">
+                    <h2 class="reparacion__card-title">
+                    Reparación de equipos recargables  
+                    </h2>
+                </a>
+
+                <a href="" class="reparacion__card">
+                    <img src="images/friorepair.png" alt="" class="reparacion__img">
+                    <h2 class="reparacion__card-title">
+                    Reparación de electrodomésticos   
+                    </h2>
+                </a>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section class="findstore">
+
+            <div class="findstore__container">
+                <h2 class="findstore__title">
+                    Encuentra Nuestro Local + Cerca de Ti
+                </h2>
+                <h3 class="findstore__subtitle">Empecemos</h3>
+                <a href="" class="findstore__link">
+                    Tienda Más Cercana
+                </a>
+
+            </div>
+
         
-    <section class="gym container">
 
-        <!--Galeria de Imagenes con Slider-->
-        <div class="gym-2 slider-box">
-            <ul>
-                <li><img class="img-1" src="images/pc1.jpg" alt="YM"></li>                
-                <li><img class="img-2" src="images/pc2.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/pc3.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/pc4.jpg" alt="YM"></li>
-            </ul>
-            
+            <div class="formulario">
+
+            <h2 class="formulario__title">
+            Solicita una llamada  <br>de nuestros técnicos
+            </h2>
+            <form action="" class="formulario__form">
+
+                <div class="input">
+                    <input type="text" placeholder="Nombre" class="form__input">
+                    <input type="number" name="" id="" placeholder="No. de Telefóno" class="form__input">
+                </div>
+                
+                <input type="submit" value="Enviar" class="form__submit">
+
+                
+
+
+            </form>
+
+            </div>
+
+        </section>
+
+        <section class="porque">
+            <h2 class="porque__h2"><span>¿Por qué</span> elegirnos?</h2>
+
+            <div class="porque__contenedor-tarjetas">
+
+                <div class="porque__container">
+                <i class="fas fa-tools fa-6x"></i>                
+                <h2 class="porque__title">
+                    Reparaciones en el mismo día
+                </h2>
+                <p class="porque__txt">
+                    Sabemos lo importante que es tu dispositivo para ti. Por eso trabajamos con rapidez y precisión para que tengas tu teléfono, tablet o computadora lista lo antes posible. Algunas reparaciones pueden completarse en tan solo 15 minutos
+                </p>
+                </div>
+
+                <div class="porque__container">
+                <i class="fas fa-handshake fa-6x"></i>
+                <h2 class="porque__title">
+                    Garantía de Servicio
+                </h2>
+                <p class="porque__txt">
+                    Todas las reparaciones realizadas por nuestro equipo cuentan con tiempo de garantía, válido únicamente sobre las piezas reemplazadas o reparadas. <br>
+                    ⚠️ No nos responsabilizamos por daños físicos adicionales ni daños ocasionados por líquidos.
+                </p>
+                </div>
+
+                
+            </div>        
+
             
 
+        </section>        
+
+
+    <section class="about">
+        <div class="container">
+            <h2><span>Quiénes</span> Somos</h2>
+            <p class="text-center mb-4">En XaviTech nos especializamos en ofrecer soluciones tecnológicas integrales para particulares y empresas.</p>
+            
+            <div class="about__container">
+                <div class="about__content">
+                    <div>
+                        <h3>Nuestra Historia</h3>
+                        <p>Fundada en 2022, XaviTech nació con la visión de crear un espacio donde la tecnología y el servicio al cliente se unieran para ofrecer experiencias excepcionales.</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Nuestra Misión</h3>
+                        <p>Proporcionar soluciones tecnológicas innovadoras y accesibles que mejoren la vida de nuestros clientes, acompañadas de un servicio excepcional y personalizado.</p>
+                    </div>
+                    
+                    <div>
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser reconocidos como el socio tecnológico de referencia para hogares y empresas, destacando por nuestra calidad, innovación y compromiso con la excelencia en cada uno de nuestros servicios.</p>
+                    </div>
+                </div>
+                
+                <div class="about__values">
+                    <div class="value__card">
+                        <div class="value__icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3 class="value__title">Confianza</h3>
+                        <p>Construimos relaciones a largo plazo basadas en la honestidad y transparencia con nuestros clientes.</p>
+                    </div>
+                    
+                    <div class="value__card">
+                        <div class="value__icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="value__title">Innovación</h3>
+                        <p>Mantenemosnos a la vanguardia tecnológica para ofrecer las mejores soluciones del mercado.</p>
+                    </div>
+                    
+                    <div class="value__card">
+                        <div class="value__icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="value__title">Calidad</h3>
+                        <p>Cada servicio que ofrecemos cumple con los más altos estándares de excelencia y garantía.</p>
+                    </div>
+                    
+                    <div class="value__card">
+                        <div class="value__icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="value__title">Compromiso</h3>
+                        <p>Nos dedicamos por completo a satisfacer las necesidades tecnológicas de cada uno de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="text-center" style="margin-top: 60px;">Nuestro Equipo</h3>
+            <div class="about__team">
+                <div class="team__member">
+                    <img src="https://placehold.co/150x150/003366/FFFFFF?text=X" alt="Xavier Hernández" class="team__img">
+                    <h4 class="team__name">Xavier Mastrapa</h4>
+                    <p class="team__role">Fundador & CEO</p>
+                    <p>Especialista en hardware  y software con más de 15 años de experiencia en el sector tecnológico.</p>
+                </div>
+                
+                <div class="team__member">
+                    <img src="https://placehold.co/150x150/003366/FFFFFF?text=M" alt="María Rodríguez" class="team__img">
+                    <h4 class="team__name">Roxana Yazmín</h4>
+                    <p class="team__role">Directora de Desarrollo</p>
+                    <p>Ingeniera de software especializada en aplicaciones web y soluciones empresariales.</p>
+                </div>
+                
+                <div class="team__member">
+                    <img src="https://placehold.co/150x150/003366/FFFFFF?text=C" alt="Carlos Mendoza" class="team__img">
+                    <h4 class="team__name">Carlos Mendoza</h4>
+                    <p class="team__role">Jefe de Reparaciones</p>
+                    <p>Técnico especializado en electrónica con amplia experiencia en las reparaciones de todo tipo de equippos electrónicos.</p>
+                </div>
+            </div>
         </div>
-        <!--Galeria de Imagenes con Slider-->
-
-        <div class="gym-1">
-            <h2><span>Reparación</span> de Equipos de Cómputo</h2>
-            <p>Si tienes algun problema con tus equipos ya sean portátiles o de sobremesa , en XaviTech tenemos profesionales que se ocuparán de darle vida a tus equipos</p>
-            <a href="#" class="btn-2">Ver Mas</a>
-            
-        </div>
-        
     </section>
 
-    <section class="gym container">
-        <div class="gym-1">
-            <h2>Servicio de <span>Electricidad y Plomería</span></h2>
-            <p>En XaviTech somos especialistas en el área de la electricidad y la plomería , Si tienes algún problema en el cableado, instalación  o algun salidero en tu residencia nosotros estaremos para ayudarte</p>
-            <a href="#" class="btn-2">Ver Mas</a>
-        </div>
-        <!--Galeria de Imagenes con Slider-->
-        <div class="gym-2 slider-box">
-            <ul>
-                <li><img class="img-1" src="images/e1.jpg" alt="YM"></li>                
-                <li><img class="img-2" src="images/p1.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/e2.jpg" alt="YM"></li>
-                <li><img class="img-2" src="images/p2.jpg" alt="YM"></li>
-            </ul>
+    <!-- Sección Contacto -->
+    <section class="contact">
+        <div class="container">
+            <h2><span>Contáct</span>anos</h2>
+            <p class="text-center mb-4">Estamos aquí para ayudarte. Ponte en contacto con nosotros para cualquier consulta o solicitud de servicio.</p>
             
+            <div class="contact__container">
+                                
+                <div class="contact__form" style="margin: auto;">
+                    <form id="contactForm">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Nombre completo</label>
+                            <input type="text" id="name" class="form__input" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="email" class="form__label">Correo electrónico</label>
+                            <input type="email" id="email" class="form__input" placeholder="tu@email.com" required>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="phone" class="form__label">Teléfono (opcional)</label>
+                            <input type="tel" id="phone" class="form__input" placeholder="+53 12345678">
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="service" class="form__label">Servicio de interés</label>
+                            <select id="service" class="form__input">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="reparacion">Reparación de equipos</option>
+                                <option value="tienda">Productos de tienda</option>
+                                <option value="software">Desarrollo de software</option>
+                                <option value="web">Creación de páginas web</option>
+                                <option value="otros">Otros servicios</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group">
+                            <label for="message" class="form__label">Mensaje</label>
+                            <textarea id="message" class="form__textarea" placeholder="Describe tu consulta o necesidad..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form__submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
             
-
+    
         </div>
-        <!--Galeria de Imagenes con Slider-->
     </section>
 
+    <script>
+        // Validación básica del formulario
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && message) {
+                // Aquí iría la lógica para enviar el formulario
+                alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+                this.reset();
+            } else {
+                alert('Por favor, completa los campos obligatorios.');
+            }
+        });
+    </script>
 
-    <footer class="footer container">
-        <h3>XaviTech</h3>
-        <div class="links">
-            <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Quienes Somos</a></li>
-                    <li><a href="#">Contacto</a></li>
+
+
+
+    </section>
+
+    </main>
+
+    <footer class="footer">
+        <a href=""> +53 53599142</a>
+        <img src="images/logoblanco.png" alt="">
+
+        <div class="footer__redes">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="footer__list-container">
+            <h2>Servicios de Reparación Especializados</h2>
+            <ul class="footer__lista">
+                <li class="footer__listitem"><a href="">Reparación de teléfonos</a></li>
+                <li class="footer__listitem"><a href="">Reparación de tablets</a></li>
+                <li class="footer__listitem"><a href="">Reparación de iPhone</a></li>
+                <li class="footer__listitem"><a href="">Reparación de portátiles</a></li>
+                <li class="footer__listitem"><a href="">Reparación de computadoras de escritorio</a></li>
+                <li class="footer__listitem"><a href="">Reparación de tarjetas de video</a></li>
+                <li class="footer__listitem"><a href="">Reparación de memorias USB</a></li>
+                <li class="footer__listitem"><a href="">Reparación de ventiladores recargables</a></li>
+                <li class="footer__listitem"><a href="">Reparación de lámparas recargables</a></li>
+                <li class="footer__listitem"><a href="">Reparación de refrigeradores</a></li>
+                <li class="footer__listitem"><a href="">Reparación de aires acondicionados</a></li>
+                <li class="footer__listitem"><a href="">Reparación de splits</a></li>
+                <li class="footer__listitem"><a href="">Reparación de sistemas de iluminación</a></li>
             </ul>
         </div>
 
