@@ -788,24 +788,7 @@ img {
     }
 }
 
-/* Modo oscuro */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --text: #f5f5f5;
-        --text-light: #ccc;
-        --background: #1a1a1a;
-        --background-alt: #2a2a2a;
-    }
-    
-    .nav__contrato {
-        background-color: #ffeb3b;
-        color: #000;
-    }
-    
-    .linkcontainer__a, .tienda__cards, .reparacion__card {
-        background-color: #2a2a2a;
-    }
-}
+
 
 /* Utilidades */
 .sr-only {
@@ -1102,4 +1085,5 @@ img {
 
         .mb-4 {
             margin-bottom: 40px;
+
         }
