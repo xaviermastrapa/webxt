@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
 </head>
 <body>
+
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5353599142?text=Hola,%20me%20interesan%20sus%20servicios" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chatear por WhatsApp"
+       title="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp fa-3x"></i>
+        <span class="whatsapp-tooltip">¿Necesitas ayuda?</span>
+    </a>
+
+    <script src="JS/wsp.js"></script>
+
+
     <!-- barra de las redes sociales -->
     <nav class="nav">
         <div class="nav__redes">
@@ -17,7 +31,7 @@
             <a href="#" title="YouTube">
                 <i class="fab fa-youtube"></i>
             </a>
-            <a href="#" title="WhatsApp">
+            <a href="https://wa.link/mlszmh" title="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
             <a href="#" title="Instagram">
@@ -46,7 +60,10 @@
                     <a href="#Tienda" class="nav__link">Tienda</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#Servicios" class="nav__link">Servicios</a>
+                    <a href="#Desarrollo" class="nav__link">Desarrollo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#Reparaciones" class="nav__link">Reparaciones</a>
                 </li>
             </ul>
 
@@ -57,10 +74,10 @@
 
         </div>
         <!-- barra para descargar contrato -->
-        <div class="nav__contrato">
-            <h3>¿Eres Empresa y Te Interesan Nuestros Servicios?</h3>
+        <!-- <div class="nav__contrato">
+            <h3>¿Te Interesan Nuestros Servicios?</h3>
             <a href="documentos/Contrato XaviTech.doc" download>Descargue aquí nuestro contrato</a><a href="documentos/Precios XaviTech(Anexo 1).docx" download=""> y Aquí Nuestros Precios</a>
-        </div>
+        </div> -->
 
         
     </nav>
@@ -84,7 +101,7 @@
 
             <div class="header__linkcontainer">
 
-            <a href="" class="linkcontainer__a">
+            <a href="#Reparaciones" class="linkcontainer__a">
 
                 <div class="icon__container">
                     <i class="fas fa-tools fa-3x"></i>
@@ -134,7 +151,7 @@
 
     <main class="main">
 
-        <section class="tienda">
+        <section class="tienda" id="Tienda">
 
             <h2 class="tienda__title"><span>Equipos</span> Electrónicos</h2>
             <h3 class="tienda__subtitle">Nos importa su confianza: garantía en cada equipo que adquieras.</h3>
@@ -169,7 +186,7 @@
         </section>
 
         <!-- Desarrollo de Software -->
-        <section class="software">
+        <section class="software" id="Desarrollo">
 
             
 
@@ -214,7 +231,7 @@
 
         </section>
 
-        <section class="reparacion">
+        <section class="reparacion" id="Reparaciones">
 
             <h2 class="reparacion__title">
                 <span>Servicios</span> de Reparación
@@ -381,7 +398,7 @@
                             <i class="fas fa-lightbulb"></i>
                         </div>
                         <h3 class="value__title">Innovación</h3>
-                        <p>Mantenemosnos a la vanguardia tecnológica para ofrecer las mejores soluciones del mercado.</p>
+                        <p>Nos mantenemos a la vanguardia tecnológica para ofrecer las mejores soluciones del mercado.</p>
                     </div>
                     
                     <div class="value__card">
@@ -408,14 +425,14 @@
                     <img src="https://placehold.co/150x150/003366/FFFFFF?text=X" alt="Xavier Hernández" class="team__img">
                     <h4 class="team__name">Xavier Mastrapa</h4>
                     <p class="team__role">Fundador & CEO</p>
-                    <p>Especialista en hardware  y software con más de 15 años de experiencia en el sector tecnológico.</p>
+                    <p>Especialista en hardware  y software con más de 5 años de experiencia en el sector tecnológico.</p>
                 </div>
                 
                 <div class="team__member">
                     <img src="https://placehold.co/150x150/003366/FFFFFF?text=M" alt="María Rodríguez" class="team__img">
                     <h4 class="team__name">Roxana Yazmín</h4>
                     <p class="team__role">Directora de Desarrollo</p>
-                    <p>Ingeniera de software especializada en aplicaciones web y soluciones empresariales.</p>
+                    <p>Licenciada en Gestion y Desarrollo, Experta en Marketing Digital y Soluciones Empresariales.</p>
                 </div>
                 
                 <div class="team__member">
@@ -429,7 +446,7 @@
     </section>
 
     <!-- Sección Contacto -->
-    <section class="contact">
+    <section class="contact" id="Contacto">
         <div class="container">
             <h2><span>Contáct</span>anos</h2>
             <p class="text-center mb-4">Estamos aquí para ayudarte. Ponte en contacto con nosotros para cualquier consulta o solicitud de servicio.</p>
@@ -516,7 +533,7 @@
             <a href="#" title="YouTube">
                 <i class="fab fa-youtube"></i>
             </a>
-            <a href="#" title="WhatsApp">
+            <a href="https://wa.link/mlszmh" title="WhatsApp">
                 <i class="fab fa-whatsapp"></i>
             </a>
             <a href="#" title="Instagram">
