@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - XaviTech</title>
+    <link rel="stylesheet" href="ccs/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5353599142?text=Hola,%20me%20interesa%20un%20producto%20de%20la%20tienda" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chatear por WhatsApp"
+       title="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <span class="whatsapp-tooltip">¿Consultas sobre productos?</span>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="nav">
+        <div class="nav__redes">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="nav__navbar">
+            <a href="main.html" class="nav__logo"><img src="images/logoblanco.png" alt="logo de la empresa"></a>
+            
+            <button class="nav__btn" id="menuBtn">☰</button>
+
+            <ul class="nav__list" id="navList">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Desarrollo" class="nav__link">Desarrollo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Reparaciones" class="nav__link">Reparaciones</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Contacto" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="nav__icons">
+                <a href="#" class="nav__icon" title="Carrito de compras">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">3</span>
+                </a>
+                <a href="#" class="nav__icon" title="Búsqueda">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+
+            <a href="main.html#Contacto" class="nav__contacto nav__link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Header de la tienda -->
+    <header class="header tienda-header">
+        <div class="header__container">
+            <div class="header__titlecontainer">
+                <h1 class="header__title">
+                    Tienda XaviTech
+                </h1>
+                <h2 class="header__subtitle">
+                    Equipos electrónicos con garantía
+                </h2>
+                <h3 class="header__h3">
+                    Calidad y confianza en cada producto
+                </h3>
+            </div>
+
+            <!-- Filtros y búsqueda -->
+            <div class="tienda-filters">
+                <div class="search-box">
+                    <input type="text" placeholder="Buscar productos..." class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-categories">
+                    <button class="filter-btn active" data-category="all">Todos</button>
+                    <button class="filter-btn" data-category="celulares">Celulares</button>
+                    <button class="filter-btn" data-category="laptops">Laptops</button>
+                    <button class="filter-btn" data-category="tablets">Tablets</button>
+                    <button class="filter-btn" data-category="accesorios">Accesorios</button>
+                    <button class="filter-btn" data-category="electrodomésticos">Electrodomésticos</button>
+                    <button class="filter-btn" data-category="generadores">Generadores</button>
+                    <button class="filter-btn" data-category="pc">PC</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__imagen">
+            <img class="header__img" src="tienda/redmia3x/RedmiA3x-1.png" alt="Tienda XaviTech">
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección de productos destacados -->
+        <section class="productos-destacados">
+            <div class="container">
+                <h2><span>Productos</span> Destacados</h2>
+                <div class="productos-grid">
+                    <!-- Producto 1 -->
+                    <div class="producto-card" data-category="celulares">
+                        <div class="producto-badge">Nuevo</div>
+                        <div class="producto-image">
+                            <img src="tienda/tecno go1/TecnoGo1s.jpg" alt="Samsung Galaxy">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Tecno Spark Go 1S</h3>
+                            <p class="producto-desc">Tecno Spark Go 1S 3GB RAM 64GB libre de fábrica 4G LTE Android GSM</p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(24)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">42 000 CUP</span>
+                                <span class="precio-anterior">$45 000</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="producto-card" data-category="celulares">
+                        <div class="producto-badge">Oferta</div>
+                        <div class="producto-image">
+                            <img src="tienda/redmi 14c/redmi 14c.jpg" alt="Laptop HP">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Xiaomi Redmi 14C 4G LTE </h3>
+                            <p class="producto-desc">128 GB + 4 GB,  ROM global desbloqueado de fábrica GSM 6.88 pulgadas 50MP triple cámara </p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(18)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">55 000 CUP</span>
+                                <span class="precio-anterior">57 000</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="producto-card" data-category="generadores">
+                        <div class="producto-image">
+                            <img src="tienda/ecoflow/ecoflow.jpg" alt="ECOFLOW">
+                        </div>
+                        <div class="producto-info">
+                            <h3>ECOFLOW DELTA 3</h3>
+                            <p class="producto-desc">Estación de energía portátil, batería LiFePO4 de 1024 Wh, carga completa en 56 minutos, salida USB-C de 1800 W AC/100 W,</p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(32)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">$820</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="producto-card" data-category="pc">
+                        <div class="producto-badge">Popular</div>
+                        <div class="producto-image">
+                            <img src="tienda/dicoduro/1t.jpg" alt="Disco Duro">
+                        </div>
+                        <div class="producto-info">
+                            <h3>HDD 1TB SEAGATE</h3>
+                            <p class="producto-desc">Seagate BarraCuda - Disco duro interno de 1 TB – 3.5 pulgadas SATA 6 Gb/s 7200 RPM caché de 64 MB para computadora de escritorio (ST1000DM010) </p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(17)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">10 000 CUP</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- añadiendo telefonos de la tienda de bryan-store -->
+
+                    <!-- Producto 5 -->
+                    <div class="producto-card" data-category="celulares">
+                        <div class="producto-badge">Oferta</div>
+                        <div class="producto-image">
+                            <img src="tienda/samsung f05/f05-1.jpg" alt="Samsung">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Samsung Galaxy F05</h3>
+                            <p class="producto-desc">Samsung Galaxy F05, 4GB RAM, 64 GB, 6.7" Libre de Fábrica  50MP New</p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(47)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">48 000 CUP</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Producto 6 -->
+                    <div class="producto-card" data-category="celulares">
+                        <div class="producto-badge">Oferta</div>
+                        <div class="producto-image">
+                            <img src="tienda/Samsung a05/a051.jpg" alt="Samsung">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Samsung Galaxy A05s</h3>
+                            <p class="producto-desc">128GB, 4GB RAM, 6.7 pulgadas Dual SIM GSM desbloqueado global 4G LTE A057M/DS</p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(47)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">61 000 CUP</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Producto 7 -->
+                    <div class="producto-card" data-category="celulares">
+                        <div class="producto-badge">Oferta</div>
+                        <div class="producto-image">
+                            <img src="tienda/redmia3x/RedmiA3x.jpg" alt="Redmi">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Xiaomi Redmi A3x</h3>
+                            <p class="producto-desc">Xiaomi Redmi A3X 4G  128 GB + 4 GB Versión ROM global desbloqueada de fábrica 6.71" 8MP Cámara dual </p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(27)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">42 000</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Producto 8 -->
+                    <div class="producto-card" data-category="pc">
+                        <div class="producto-badge">Oferta</div>
+                        <div class="producto-image">
+                            <img src="tienda/h81/h81.png" alt="Samsung">
+                        </div>
+                        <div class="producto-info">
+                            <h3>Asus H81M-CT Placa Madre</h3>
+                            <p class="producto-desc">4GB RAM DDR3 1600, i3-4460 @3.20 GHZ</p>
+                            <div class="producto-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(87)</span>
+                            </div>
+                            <div class="producto-precio">
+                                <span class="precio-actual">25 000 CUP</span>
+                            </div>
+                            <div class="producto-actions">
+                                <button class="btn-comprar">Comprar ahora</button>
+                                <button class="btn-carrito">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de categorías
+        <section class="categorias-tienda">
+            <div class="container">
+                <h2><span>Categorías</span> de Productos</h2>
+                <div class="categorias-grid">
+                    <a href="#celulares" class="categoria-card" data-category="celulares">
+                        <div class="categoria-icon">
+                            <i class="fas fa-mobile-alt fa-3x"></i>
+                        </div>
+                        <h3>Celulares</h3>
+                        <p>Smartphones de última generación</p>
+                        <span class="categoria-count">24 productos</span>
+                    </a>
+
+                    <a href="#laptops" class="categoria-card" data-category="laptops">
+                        <div class="categoria-icon">
+                            <i class="fas fa-laptop fa-3x"></i>
+                        </div>
+                        <h3>Laptops</h3>
+                        <p>Computadoras portátiles</p>
+                        <span class="categoria-count">18 productos</span>
+                    </a>
+
+                    <a href="#tablets" class="categoria-card" data-category="tablets">
+                        <div class="categoria-icon">
+                            <i class="fas fa-tablet-alt fa-3x"></i>
+                        </div>
+                        <h3>Tablets</h3>
+                        <p>Tablets y iPad</p>
+                        <span class="categoria-count">12 productos</span>
+                    </a>
+
+                    <a href="#accesorios" class="categoria-card" data-category="accesorios">
+                        <div class="categoria-icon">
+                            <i class="fas fa-headphones fa-3x"></i>
+                        </div>
+                        <h3>Accesorios</h3>
+                        <p>Audífonos, fundas, cargadores</p>
+                        <span class="categoria-count">36 productos</span>
+                    </a>
+                </div>
+            </div>
+        </section>  -->
+
+        
+        
+        <!-- Sección de ofertas especiales  -->
+        <!--
+        <section class="ofertas-especiales">
+            <div class="container">
+                <div class="ofertas-header">
+                    <h2><span>Ofertas</span> Especiales</h2>
+                    <div class="ofertas-timer">
+                        <div class="timer-item">
+                            <span class="timer-number">02</span>
+                            <span class="timer-label">Días</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number">14</span>
+                            <span class="timer-label">Horas</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-number">35</span>
+                            <span class="timer-label">Min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ofertas-grid">
+                    <div class="oferta-card">
+                        <div class="oferta-badge">-30%</div>
+                        <div class="oferta-image">
+                            <img src="images/xiaomi-note.jpg" alt="Xiaomi Note">
+                        </div>
+                        <div class="oferta-info">
+                            <h3>Xiaomi Redmi Note 12</h3>
+                            <div class="oferta-precio">
+                                <span class="precio-oferta">$299</span>
+                                <span class="precio-normal">$429</span>
+                            </div>
+                            <button class="btn-oferta">Aprovechar oferta</button>
+                        </div>
+                    </div>
+
+                    <div class="oferta-card">
+                        <div class="oferta-badge">-25%</div>
+                        <div class="oferta-image">
+                            <img src="images/macbook-air.jpg" alt="MacBook Air">
+                        </div>
+                        <div class="oferta-info">
+                            <h3>MacBook Air M1</h3>
+                            <div class="oferta-precio">
+                                <span class="precio-oferta">$999</span>
+                                <span class="precio-normal">$1,299</span>
+                            </div>
+                            <button class="btn-oferta">Aprovechar oferta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Sección de garantías y beneficios -->
+        <section class="beneficios-tienda">
+            <div class="container">
+                <h2><span>Beneficios</span> XaviTech</h2>
+                <div class="beneficios-grid">
+                    <div class="beneficio-card">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                        <h3>Garantía Extendida</h3>
+                        <p>12 meses de garantía en todos nuestros productos</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <i class="fas fa-shipping-fast fa-3x"></i>
+                        <h3>Envío Gratis</h3>
+                        <p>En compras mayores a $200 en toda la ciudad</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <i class="fas fa-exchange-alt fa-3x"></i>
+                        <h3>Devoluciones</h3>
+                        <p>30 días para cambiar o devolver tu producto</p>
+                    </div>
+                    <div class="beneficio-card">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <h3>Soporte Técnico</h3>
+                        <p>Asesoramiento técnico gratuito post-venta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de testimonios -->
+        <section class="testimonios-tienda">
+            <div class="container">
+                <h2><span>Opiniones</span> de Clientes</h2>
+                <div class="testimonios-grid">
+                    <div class="testimonio-card">
+                        <div class="testimonio-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonio-text">"Excelente servicio y productos de calidad. Compré un iPhone y todo el proceso fue muy profesional."</p>
+                        <div class="testimonio-author">
+                            <strong>María González</strong>
+                            <span>Cliente desde 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="testimonio-card">
+                        <div class="testimonio-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonio-text">"La laptop que compré superó mis expectativas. Buena relación calidad-precio y garantía confiable."</p>
+                        <div class="testimonio-author">
+                            <strong>Carlos Rodríguez</strong>
+                            <span>Cliente desde 2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="tel:+5353599142">+53 53599142</a>
+        <img src="images/logoblanco.png" alt="XaviTech">
+        
+        <div class="footer__redes">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer__list-container">
+            <h2>Categorías de Productos</h2>
+            <ul class="footer__lista">
+                <li><a href="#celulares">Celulares y Smartphones</a></li>
+                <li><a href="#laptops">Laptops y Computadoras</a></li>
+                <li><a href="#tablets">Tablets y iPad</a></li>
+                <li><a href="#accesorios">Accesorios</a></li>
+                <li><a href="#audio">Audio y Audífonos</a></li>
+                <li><a href="#smartwatch">Smartwatches</a></li>
+                <li><a href="#cargadores">Cargadores y Cables</a></li>
+                <li><a href="#fundas">Fundas y Protectores</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script>
+        // Filtrado de productos
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const productCards = document.querySelectorAll('.producto-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase active de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    this.classList.add('active');
+
+                    const category = this.getAttribute('data-category');
+
+                    // Mostrar/ocultar productos según la categoría
+                    productCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Contador de ofertas (ejemplo simple)
+            function updateOfferTimer() {
+                // Aquí iría la lógica real del contador
+                console.log('Actualizando contador de ofertas...');
+            }
+
+            setInterval(updateOfferTimer, 60000);
+        });
+    </script>
+
+    <style>
+        /* Estilos específicos para la página de tienda */
+        .tienda-header {
+            background: linear-gradient(135deg, #fa2a2a 0%, #a5938d 100%);
+            color: white;
+        }
+
+        .tienda-header .header__title {
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .tienda-header .header__subtitle {
+            color: #e0e0e0;
+            font-size: 1.6rem;
+        }
+
+        .nav__icons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav__icon {
+            color: white;
+            font-size: 1.2rem;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav__icon:hover {
+            color: #ffcc00;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tienda-filters {
+            margin-top: 30px;
+        }
+
+        .search-box {
+            display: flex;
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 1rem;
+        }
+
+        .search-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0 20px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+
+        .filter-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        .productos-destacados {
+            padding: 80px 0;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .producto-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .producto-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .producto-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .producto-badge:nth-child(2) {
+            background: #ff6b6b;
+            left: auto;
+            right: 15px;
+        }
+
+        .producto-image {
+            height: 200px;
+            overflow: hidden;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .producto-image img {
+            max-height: 80%;
+            max-width: 80%;
+            object-fit: contain;
+        }
+
+        .producto-info {
+            padding: 20px;
+        }
+
+        .producto-info h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .producto-desc {
+            color: var(--text-light);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .producto-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+
+        .producto-rating i {
+            color: #ffcc00;
+        }
+
+        .producto-rating span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .producto-precio {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .precio-actual {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .precio-anterior {
+            font-size: 1rem;
+            color: var(--text-light);
+            text-decoration: line-through;
+        }
+
+        .producto-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-comprar {
+            flex: 1;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-comprar:hover {
+            background: var(--secondary);
+        }
+
+        .btn-carrito {
+            background: var(--background-alt);
+            border: none;
+            width: 45px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-carrito:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .categorias-tienda {
+            padding: 80px 0;
+            background: var(--background-alt);
+        }
+
+        .categorias-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .categoria-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+            box-shadow: var(--shadow);
+        }
+
+        .categoria-card:hover {
+            transform: translateY(-5px);
+            color: inherit;
+        }
+
+        .categoria-icon {
+            margin-bottom: 20px;
+        }
+
+        .categoria-icon i {
+            color: var(--primary);
+        }
+
+        .categoria-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .categoria-count {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        .ofertas-especiales {
+            padding: 80px 0;
+        }
+
+        .ofertas-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .ofertas-timer {
+            display: flex;
+            gap: 20px;
+        }
+
+        .timer-item {
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+
+        .timer-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .timer-label {
+            font-size: 0.9rem;
+        }
+
+        .ofertas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .oferta-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .oferta-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        .oferta-image {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .oferta-image img {
+            max-height: 80%;
+            max-width: 80%;
+        }
+
+        .oferta-info {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .oferta-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+
+        .oferta-precio {
+            margin-bottom: 25px;
+        }
+
+        .precio-oferta {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .precio-normal {
+            text-decoration: line-through;
+            opacity: 0.8;
+        }
+
+        .btn-oferta {
+            background: #ffcc00;
+            color: #333;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-oferta:hover {
+            background: #ffd700;
+            transform: scale(1.05);
+        }
+
+        .beneficios-tienda {
+            padding: 80px 0;
+            background: var(--background-alt);
+        }
+
+        .beneficios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .beneficio-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .beneficio-card i {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .beneficio-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .testimonios-tienda {
+            padding: 80px 0;
+        }
+
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .testimonio-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonio-rating {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .testimonio-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .testimonio-author strong {
+            color: var(--primary);
+            display: block;
+        }
+
+        .testimonio-author span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .ofertas-header {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .productos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .categorias-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .ofertas-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .beneficios-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonios-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-categories {
+                justify-content: center;
+            }
+            
+            .nav__icons {
+                display: none;
+            }
+        }
+    </style>
+</body>
+</html>
