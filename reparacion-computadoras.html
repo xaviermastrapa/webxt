@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparación de Computadoras - XaviTech</title>
+    <link rel="stylesheet" href="ccs/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="ccs/reparacion-computadoras.css">
+</head>
+<body>
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5353599142?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20computadoras" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chatear por WhatsApp"
+       title="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <span class="whatsapp-tooltip">¿Problemas con tu PC?</span>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="nav">
+        <div class="nav__redes">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="nav__navbar">
+            <a href="main.html" class="nav__logo"><img src="images/logoblanco.png" alt="logo de la empresa"></a>
+            
+            <button class="nav__btn" id="menuBtn">☰</button>
+
+            <ul class="nav__list" id="navList">
+                <li class="nav__item">
+                    <a href="main.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Tienda" class="nav__link">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Desarrollo" class="nav__link">Desarrollo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Reparaciones" class="nav__link">Reparaciones</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Contacto" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+
+            <a href="main.html#Contacto" class="nav__contacto nav__link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Header especializado -->
+    <header class="header reparacion-header">
+        <div class="header__container">
+            <div class="header__titlecontainer">
+                <h1 class="header__title">
+                    Reparación de Computadoras
+                </h1>
+                <h2 class="header__subtitle">
+                    Soluciones rápidas y garantizadas para tu PC
+                </h2>
+                <h3 class="header__h3">
+                    Diagnóstico gratuito y reparaciones en el mismo día
+                </h3>
+            </div>
+
+            <div class="header__linkcontainer">
+                <a href="#diagnostico" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-search fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Diagnóstico Gratis</h2>
+                </a>
+
+                <a href="#servicios" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-tools fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Nuestros Servicios</h2>
+                </a>
+
+                <a href="#garantia" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Garantía</h2>
+                </a>
+            </div>
+
+            <div class="header__localizarreparacion">
+                <a href="https://wa.me/5353599142?text=Hola,%20necesito%20reparar%20mi%20computadora">
+                    ¡Solicita tu reparación ahora!
+                </a>
+            </div>
+        </div>
+
+        <div class="header__imagen">
+            <img class="header__img" src="images/PC-PNG-Isolated-Image.png" alt="Reparación de computadoras">
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección de problemas comunes -->
+        <section class="problemas-comunes">
+            <div class="container">
+                <h2><span>Problemas</span> Comunes que Resolvemos</h2>
+                <div class="problemas__grid">
+                    <div class="problema__card">
+                        <i class="fas fa-tachometer-alt fa-3x"></i>
+                        <h3>Lentitud Extrema</h3>
+                        <p>Tu computadora tarda mucho en iniciar o abrir programas</p>
+                    </div>
+                    <div class="problema__card">
+                        <i class="fas fa-virus fa-3x"></i>
+                        <h3>Infección de Virus</h3>
+                        <p>Eliminamos virus, malware y spyware por completo</p>
+                    </div>
+                    <div class="problema__card">
+                        <i class="fas fa-thermometer-full fa-3x"></i>
+                        <h3>Sobrecalentamiento</h3>
+                        <p>La PC se apaga sola o hace mucho ruido</p>
+                    </div>
+                    <div class="problema__card">
+                        <i class="fas fa-hdd fa-3x"></i>
+                        <h3>Problemas de Disco Duro</h3>
+                        <p>Recuperamos datos y reemplazamos discos dañados</p>
+                    </div>
+                    <div class="problema__card">
+                        <i class="fas fa-desktop fa-3x"></i>
+                        <h3>Pantalla Azul</h3>
+                        <p>Solucionamos errores críticos del sistema</p>
+                    </div>
+                    <div class="problema__card">
+                        <i class="fas fa-plug fa-3x"></i>
+                        <h3>Problemas de Energía</h3>
+                        <p>La computadora no enciende o se reinicia sola</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de servicios detallados -->
+        <section class="servicios-detallados" id="servicios">
+            <div class="container">
+                <h2><span>Servicios</span> de Reparación Especializados</h2>
+                
+                <div class="servicio__categoria">
+                    <h3><i class="fas fa-desktop"></i> Reparación de Hardware</h3>
+                    <div class="servicios__grid">
+                        <div class="servicio__item">
+                            <h4>Mantenimiento</h4>
+                            <p>Limpieza profunda a componentes y cambio de Pasta Térmica</p>
+                            <span class="precio">Desde $4</span>
+                        </div>
+                        <div class="servicio__item">
+                            <h4>Reparaciones de MotherBoard</h4>
+                            <p>Reparación de la Placa por desperfectos técnicos</p>
+                            <span class="precio">Desde $10</span>
+                        </div>
+                        <div class="servicio__item">
+                            <h4>Cambio de Disco Duro</h4>
+                            <p>Instalación de HDD o SSD con transferencia de datos</p>
+                            <span class="precio">Desde $25</span>
+                        </div>
+                        <div class="servicio__item">
+                            <h4>Reparación de Fuente</h4>
+                            <p>Reparación o cambio de fuente de poder</p>
+                            <span class="precio">Desde $30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servicio__categoria">
+                    <h3><i class="fas fa-code"></i> Reparación de Software</h3>
+                    <div class="servicios__grid">
+                        <div class="servicio__item">
+                            <h4>Formateo e Instalación</h4>
+                            <p>Windows 7 , 8 , 10 / 11  + controladores + Office</p>
+                            <span class="precio">$5</span>
+                        </div>
+                        <div class="servicio__item">
+                            <h4>Limpieza de Virus</h4>
+                            <p>Eliminación completa de malware y optimización</p>
+                            <span class="precio">$5</span>
+                        </div>
+                        <div class="servicio__item">
+                            <h4>Recuperación de Datos</h4>
+                            <p>Recuperamos tus archivos importantes</p>
+                            <span class="precio">Desde $10</span>
+                        </div>
+                        <div class="servicio__item">
+                            <h4>Actualización de Sistema</h4>
+                            <p>Optimización y actualización de software</p>
+                            <span class="precio">$5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de diagnóstico gratuito -->
+        <section class="diagnostico-gratis" id="diagnostico">
+            <div class="container">
+                <div class="diagnostico__content">
+                    <div class="diagnostico__text">
+                        <h2><span>Diagnóstico</span> Gratuito</h2>
+                        <p>Trae tu computadora y realizaremos un diagnóstico completo sin costo. Te explicaremos exactamente qué necesita tu equipo y el precio de la reparación antes de comenzar.</p>
+                        <ul class="diagnostico__beneficios">
+                            <li><i class="fas fa-check"></i> Análisis completo del hardware</li>
+                            <li><i class="fas fa-check"></i> Diagnóstico del sistema operativo</li>
+                            <li><i class="fas fa-check"></i> Presupuesto detallado</li>
+                            <li><i class="fas fa-check"></i> Sin compromiso</li>
+                        </ul>
+                        <a href="https://wa.me/5353599142?text=Hola,%20quiero%20un%20diagnóstico%20gratuito%20para%20mi%20computadora" class="btn-diagnostico">
+                            Solicitar Diagnóstico Gratis
+                        </a>
+                    </div>
+                    <div class="diagnostico__image">
+                        <img src="images/mantenimineto.jpeg" alt="Diagnóstico de computadoras">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de garantía -->
+        <section class="garantia-section" id="garantia">
+            <div class="container">
+                <h2><span>Garantía</span> en Todas Nuestras Reparaciones</h2>
+                <div class="garantia__content">
+                    <div class="garantia__item">
+                        <i class="fas fa-calendar-check fa-3x"></i>
+                        <h3>30 Días de Garantía</h3>
+                        <p>En todas las reparaciones de hardware y software</p>
+                    </div>
+                    <div class="garantia__item">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <h3>Reparaciones con Calidad</h3>
+                        <p>Usamos repuestos originales y de alta calidad</p>
+                    </div>
+                    <div class="garantia__item">
+                        <i class="fas fa-clock fa-3x"></i>
+                        <h3>Rápido y Eficiente</h3>
+                        <p>50% de las reparaciones se completan en el mismo día</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de marcas que reparamos -->
+        <section class="marcas-section">
+            <div class="container">
+                <h2><span>Marcas</span> que Reparamos</h2>
+                <div class="marcas__grid">
+                    <div class="marca__item">Asus</div>
+                    <div class="marca__item">Gigabyte</div>
+                    <div class="marca__item">Lenovo</div>
+                    <div class="marca__item">Acer</div>
+                    <div class="marca__item">MSI</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="tel:+5353599142">+53 53599142</a>
+        <img src="images/logoblanco.png" alt="XaviTech">
+        
+        <div class="footer__redes">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer__list-container">
+            <h2>Servicios de Reparación de Computadoras</h2>
+            <ul class="footer__lista">
+                <li><a href="#">Reparación de laptops</a></li>
+                <li><a href="#">Reparación de PC de escritorio</a></li>
+                <li><a href="#">Mantenimiento preventivo</a></li>
+                <li><a href="#">Actualización de hardware</a></li>
+                <li><a href="#">Recuperación de datos</a></li>
+                <li><a href="#">Instalación de software</a></li>
+                <li><a href="#">Limpieza de virus</a></li>
+                <li><a href="#">Reparación de pantallas</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+</body>
+</html>
