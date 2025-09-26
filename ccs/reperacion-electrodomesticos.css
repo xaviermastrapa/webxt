@@ -1,0 +1,447 @@
+
+        /* Estilos específicos para la página de electrodomésticos */
+        .electrodomesticos-header {
+            background: linear-gradient(135deg, var(--primary) 0%, #3e4443 100%);
+            color: white;
+        }
+
+        .electrodomesticos-header .header__title {
+            color: white;
+            font-size: 2.2rem;
+        }
+
+        .electrodomesticos-header .header__subtitle {
+            color: #e0e0e0;
+            font-size: 1.5rem;
+        }
+
+
+        .linkcontainer__a{
+            background: inherit;
+        }
+
+        .icon__container i{
+            color: #ffcc00;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        .header__img{
+            margin-left: 125px;
+        }
+
+        .header__h3{
+            color: #acabab;
+        }
+
+
+        .equipos-recargables {
+            padding: 80px 0;
+            background-color: var(--background-alt);
+        }
+
+        .equipos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .equipo-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .equipo-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .equipo-icon {
+            margin-bottom: 20px;
+        }
+
+        .equipo-icon i {
+            color: var(--primary);
+        }
+
+        .equipo-card h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .equipo-lista {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .equipo-lista li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .equipo-lista li::before {
+            content: '✓';
+            color: var(--accent);
+            position: absolute;
+            left: -15px;
+            font-weight: bold;
+        }
+
+        .equipo-precio {
+            margin-top: 20px;
+        }
+
+        .precio-desde {
+            background: var(--primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .electrodomesticos-reparacion {
+            padding: 80px 0;
+        }
+
+        .electrodomesticos-categorias {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 50px;
+        }
+
+        .categoria-electro h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .categoria-electro h3 i {
+            color: var(--accent);
+        }
+
+        .electro-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .electro-item {
+            background: var(--background-alt);
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .electro-item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .electro-precio {
+            display: block;
+            color: var(--accent);
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        .servicio-domicilio {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .domicilio-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .domicilio-beneficios {
+            margin: 30px 0;
+        }
+
+        .beneficio-domicilio {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .beneficio-domicilio i {
+            color: var(--primary);
+            font-size: 1.5rem;
+            width: 40px;
+        }
+
+        .beneficio-domicilio h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .domicilio-precios {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .precios-list {
+            margin-top: 20px;
+        }
+
+        .precio-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .precio-item:last-child {
+            border-bottom: none;
+        }
+
+        .btn-domicilio {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--accent);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .btn-domicilio:hover {
+            background: #1ea952;
+            transform: translateY(-2px);
+        }
+
+        .domicilio-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .diagnostico-electrodomesticos {
+            padding: 80px 0;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .diagnostico-electrodomesticos h2 {
+            color: white;
+        }
+
+        .diagnostico-electrodomesticos h2 span {
+            color: #ffcc00;
+        }
+
+        .diagnostico-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .diagnostico-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .diagnostico-card i {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .diagnostico-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .diagnostico-cta {
+            text-align: center;
+            margin-top: 60px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+
+        .diagnostico-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .btn-diagnostico {
+            background: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .btn-diagnostico:hover {
+            background: #1ea952;
+            transform: translateY(-2px);
+        }
+
+        .btn-llamar {
+            background: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-llamar:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        .marcas-electrodomesticos {
+            padding: 80px 0;
+        }
+
+        .marcas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .marca-item {
+            background: var(--background-alt);
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .emergencias-electrodomesticos {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+        }
+
+        .emergencia-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .emergencia-content h2 {
+            color: white;
+        }
+
+        .emergencia-content h2 span {
+            color: #ffcc00;
+        }
+
+        .emergencia-features {
+            margin: 30px 0;
+        }
+
+        .emergencia-feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .emergencia-feature i {
+            color: #ffcc00;
+            font-size: 1.5rem;
+        }
+
+        .emergencia-contacto {
+            margin-top: 40px;
+        }
+
+        .contacto-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contacto-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .contacto-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .emergencia-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        @media (max-width: 768px) {
+            .header__img{
+                margin-left: 0;
+            }
+            .equipos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .domicilio-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .emergencia-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .electro-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .diagnostico-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .marcas-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .container{
+                width: 100%;
+            }
+        }
