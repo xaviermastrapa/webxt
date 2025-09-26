@@ -1,0 +1,231 @@
+ /* Estilos específicos para la página de reparación de computadoras */
+        .reparacion-header {
+            background: linear-gradient(135deg, var(--primary) 0%, #002244 100%);
+            color: white;
+        }
+
+        .reparacion-header .header__title {
+            color: white;
+        }
+
+        .reparacion-header .header__subtitle {
+            color: #e0e0e0;
+        }
+
+        .reparacion-header .header__h3 {
+            color: #cccccc;
+        }
+
+        .header__img{
+            margin-left: 120px;
+        }
+
+        .linkcontainer__a{
+            background-color: var(--primary);
+        }
+
+        .linkcontainer__a i{
+            color: #eee;
+        }
+
+        .problemas-comunes {
+            padding: 80px 0;
+            background-color: var(--background-alt);
+        }
+
+        .problemas__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .problema__card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .problema__card:hover {
+            transform: translateY(-5px);
+        }
+
+        .problema__card i {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .problema__card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .servicios-detallados {
+            padding: 80px 0;
+        }
+
+        .servicio__categoria {
+            margin-bottom: 60px;
+        }
+
+        .servicio__categoria h3 {
+            color: var(--primary);
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .servicios__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .servicio__item {
+            background: var(--background-alt);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .servicio__item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            display: block;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .diagnostico-gratis {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .diagnostico__content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .diagnostico__text {
+            flex: 1;
+        }
+
+        .diagnostico__image {
+            flex: 1;
+        }
+
+        .diagnostico__image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .diagnostico__beneficios {
+            margin: 20px 0;
+        }
+
+        .diagnostico__beneficios li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .diagnostico__beneficios i {
+            color: var(--accent);
+            margin-right: 10px;
+        }
+
+        .btn-diagnostico {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: var(--transition);
+            margin-top: 20px;
+        }
+
+        .btn-diagnostico:hover {
+            background: #1ea952;
+            transform: translateY(-2px);
+        }
+
+        .garantia-section {
+            padding: 80px 0;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .garantia-section h2 {
+            color: white;
+        }
+
+        .garantia-section h2 span {
+            color: #ffcc00;
+        }
+
+        .garantia__content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .garantia__item {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .garantia__item i {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .marcas-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .marcas__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .marca__item {
+            background: var(--background-alt);
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .header__img{
+                margin-left: 0;
+            }
+            .diagnostico__content {
+                flex-direction: column;
+            }
+            
+            .servicios__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .problemas__grid {
+                grid-template-columns: 1fr;
+            }
+        }
