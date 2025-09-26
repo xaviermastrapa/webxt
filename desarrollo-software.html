@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Software - XaviTech</title>
+    <link rel="stylesheet" href="ccs/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5353599142?text=Hola,%20necesito%20desarrollo%20de%20software%20personalizado" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chatear por WhatsApp"
+       title="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <span class="whatsapp-tooltip">¿Necesitas software?</span>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="nav">
+        <div class="nav__redes">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="nav__navbar">
+            <a href="main.html" class="nav__logo"><img src="images/logoblanco.png" alt="logo de la empresa"></a>
+            
+            <button class="nav__btn" id="menuBtn">☰</button>
+
+            <ul class="nav__list" id="navList">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Tienda" class="nav__link">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Desarrollo" class="nav__link">Desarrollo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Reparaciones" class="nav__link">Reparaciones</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Contacto" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+
+            <a href="main.html#Contacto" class="nav__contacto nav__link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Header especializado -->
+    <header class="header desarrollo-header">
+        <div class="header__container">
+            <div class="header__titlecontainer">
+                <h1 class="header__title">
+                    Desarrollo de Software a Medida
+                </h1>
+                <h2 class="header__subtitle">
+                    Soluciones digitales que impulsan tu negocio
+                </h2>
+                <h3 class="header__h3">
+                    Desde aplicaciones web hasta sistemas empresariales complejos
+                </h3>
+            </div>
+
+            <div class="header__linkcontainer">
+                <a href="#web" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-globe fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Web</h2>
+                </a>
+
+                <a href="#desktop" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-desktop fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Escritorio</h2>
+                </a>
+
+                <a href="#mobile" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Móvil</h2>
+                </a>
+            </div>
+
+            <div class="header__localizarreparacion">
+                <a href="#cotizacion">
+                    Solicitar Cotización Gratuita
+                </a>
+            </div>
+        </div>
+
+        <div class="header__imagen">
+            <img class="header__img" src="images/Java-PNG-Picture.png" alt="Desarrollo de software">
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección de servicios de desarrollo -->
+        <section class="servicios-desarrollo">
+            <div class="container">
+                <h2><span>Servicios</span> de Desarrollo</h2>
+                
+                <div class="servicios-grid">
+                    <div class="servicio-card" id="web">
+                        <div class="servicio-icon">
+                            <i class="fas fa-code fa-3x"></i>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Creación de sitios web y aplicaciones web modernas y responsive</p>
+                        <ul class="servicio-lista">
+                            <li>Landing Pages</li>
+                            <li>Tiendas Online (E-commerce)</li>
+                            <li>Portales Corporativos</li>
+                            <li>Aplicaciones Web Progresivas</li>
+                            <li>Sistemas de Gestión</li>
+                        </ul>
+                        <div class="tecnologias">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card" id="desktop">
+                        <div class="servicio-icon">
+                            <i class="fas fa-desktop fa-3x"></i>
+                        </div>
+                        <h3>Aplicaciones de Escritorio</h3>
+                        <p>Software personalizado para Windows, macOS y Linux</p>
+                        <ul class="servicio-lista">
+                            <li>Sistemas de Inventario</li>
+                            <li>Software Contable</li>
+                            <li>Herramientas de Productividad</li>
+                            <li>Automatización de Procesos</li>
+                            <li>Software Educativo</li>
+                        </ul>
+                        <div class="tecnologias">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Electron</span>
+                        </div>
+                    </div>
+
+                    <div class="servicio-card" id="mobile">
+                        <div class="servicio-icon">
+                            <i class="fas fa-mobile-alt fa-3x"></i>
+                        </div>
+                        <h3>Apps Móviles</h3>
+                        <p>Desarrollo de aplicaciones nativas e híbridas para iOS y Android</p>
+                        <ul class="servicio-lista">
+                            <li>Apps Empresariales</li>
+                            <li>Apps de Productividad</li>
+                            <li>Juegos Móviles</li>
+                            <li>Apps de Servicios</li>
+                            <li>Utilidades Móviles</li>
+                        </ul>
+                        <div class="tecnologias">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de proceso de desarrollo -->
+        <section class="proceso-desarrollo">
+            <div class="container">
+                <h2><span>Nuestro</span> Proceso</h2>
+                <div class="proceso-steps">
+                    <div class="proceso-step">
+                        <div class="step-number">1</div>
+                        <h3>Análisis y Planificación</h3>
+                        <p>Comprendemos tus necesidades y diseñamos la solución ideal</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">2</div>
+                        <h3>Diseño y Prototipo</h3>
+                        <p>Creamos wireframes y prototipos para validar la idea</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">3</div>
+                        <h3>Desarrollo</h3>
+                        <p>Programamos tu solución con las mejores prácticas</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">4</div>
+                        <h3>Pruebas y Calidad</h3>
+                        <p>Garantizamos que todo funcione perfectamente</p>
+                    </div>
+                    <div class="proceso-step">
+                        <div class="step-number">5</div>
+                        <h3>Implementación</h3>
+                        <p>Lanzamos tu proyecto y te damos soporte continuo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de proyectos destacados -->
+        <section class="proyectos-destacados">
+            <div class="container">
+                <h2><span>Proyectos</span> Destacados</h2>
+                <div class="proyectos-grid">
+                    <div class="proyecto-card">
+                        <div class="proyecto-image">
+                            <i class="fas fa-store fa-4x"></i>
+                        </div>
+                        <h3>Sistema de Gestión Comercial</h3>
+                        <p>Software completo para gestión de inventario, ventas y clientes</p>
+                        <div class="proyecto-details">
+                            <span class="proyecto-category">Escritorio</span>
+                            <span class="proyecto-time">3 meses</span>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <div class="proyecto-image">
+                            <i class="fas fa-calendar-alt fa-4x"></i>
+                        </div>
+                        <h3>App de Reservas</h3>
+                        <p>Aplicación móvil para reservas de servicios y citas</p>
+                        <div class="proyecto-details">
+                            <span class="proyecto-category">Móvil</span>
+                            <span class="proyecto-time">2 meses</span>
+                        </div>
+                    </div>
+
+                    <div class="proyecto-card">
+                        <div class="proyecto-image">
+                            <i class="fas fa-chart-line fa-4x"></i>
+                        </div>
+                        <h3>Dashboard Analytics</h3>
+                        <p>Panel de control web para análisis de datos empresariales</p>
+                        <div class="proyecto-details">
+                            <span class="proyecto-category">Web</span>
+                            <span class="proyecto-time">4 meses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de tecnologías -->
+        <section class="tecnologias-section">
+            <div class="container">
+                <h2><span>Tecnologías</span> que Utilizamos</h2>
+                <div class="tecnologias-grid">
+                    <div class="tecnologia-category">
+                        <h3>Frontend</h3>
+                        <div class="tecnologias-list">
+                            <span class="tecnologia-item">React</span>
+                            <span class="tecnologia-item">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="tecnologia-category">
+                        <h3>Backend</h3>
+                        <div class="tecnologias-list">                        
+                            <span class="tecnologia-item">Python</span>
+                            <span class="tecnologia-item">PHP</span>
+                            <span class="tecnologia-item">Java</span>                           
+                        </div>
+                    </div>
+                    <div class="tecnologia-category">
+                        <h3>Bases de Datos</h3>
+                        <div class="tecnologias-list">
+                            <span class="tecnologia-item">MySQL</span>
+                            <span class="tecnologia-item">PostgreSQL</span>
+                            <span class="tecnologia-item">MongoDB</span>
+                            <span class="tecnologia-item">SQLite</span>
+                            <span class="tecnologia-item">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="tecnologia-category">
+                        <h3>Móvil</h3>
+                        <div class="tecnologias-list">
+                            <span class="tecnologia-item">React Native</span>                            
+                            <span class="tecnologia-item">Kotlin</span>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de cotización -->
+        <section class="cotizacion-section" id="cotizacion">
+            <div class="container">
+                <div class="cotizacion-content">
+                    <div class="cotizacion-text">
+                        <h2><span>Cotización</span> Gratuita</h2>
+                        <p>¿Tienes una idea para un proyecto de software? Contáctanos y recibe una cotización sin compromiso.</p>
+                        <ul class="cotizacion-beneficios">
+                            <li><i class="fas fa-check"></i> Análisis detallado de tu proyecto</li>
+                            <li><i class="fas fa-check"></i> Presupuesto transparente</li>
+                            <li><i class="fas fa-check"></i> Plan de desarrollo personalizado</li>
+                            <li><i class="fas fa-check"></i> Timeline realista</li>
+                        </ul>
+                    </div>
+                    <div class="cotizacion-form">
+                        <form class="formulario-cotizacion">
+                            <div class="form-group">
+                                <input type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Tu email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Tu teléfono">
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="">Tipo de proyecto</option>
+                                    <option value="web">Aplicación Web</option>
+                                    <option value="desktop">Software de Escritorio</option>
+                                    <option value="mobile">App Móvil</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Describe tu proyecto..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-cotizacion">
+                                Solicitar Cotización
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de ventajas -->
+        <section class="ventajas-section">
+            <div class="container">
+                <h2><span>¿Por qué</span> elegirnos?</h2>
+                <div class="ventajas-grid">
+                    <div class="ventaja-card">
+                        <i class="fas fa-code-branch fa-3x"></i>
+                        <h3>Desarrollo Personalizado</h3>
+                        <p>Cada solución es única y adaptada a tus necesidades específicas</p>
+                    </div>
+                    <div class="ventaja-card">
+                        <i class="fas fa-clock fa-3x"></i>
+                        <h3>Entregas a Tiempo</h3>
+                        <p>Cumplimos con los plazos establecidos en el plan de desarrollo</p>
+                    </div>
+                    <div class="ventaja-card">
+                        <i class="fas fa-shield-alt fa-3x"></i>
+                        <h3>Calidad Garantizada</h3>
+                        <p>Implementamos las mejores prácticas de desarrollo y testing</p>
+                    </div>
+                    <div class="ventaja-card">
+                        <i class="fas fa-headset fa-3x"></i>
+                        <h3>Soporte Continuo</h3>
+                        <p>Te acompañamos después del lanzamiento con soporte técnico</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="tel:+5353599142">+53 53599142</a>
+        <img src="images/logoblanco.png" alt="XaviTech">
+        
+        <div class="footer__redes">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer__list-container">
+            <h2>Servicios de Desarrollo</h2>
+            <ul class="footer__lista">
+                <li><a href="#">Desarrollo Web</a></li>
+                <li><a href="#">Apps Móviles</a></li>
+                <li><a href="#">Software de Escritorio</a></li>
+                <li><a href="#">E-commerce</a></li>
+                <li><a href="#">Sistemas de Gestión</a></li>
+                <li><a href="#">Automatización</a></li>
+                <li><a href="#">Consultoría TI</a></li>
+                <li><a href="#">Mantenimiento</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/wsp.js"></script>
+    <style>
+        /* Estilos específicos para la página de desarrollo de software */
+        .desarrollo-header {
+            background: linear-gradient(135deg, #171922 0%, #c4c1c7 100%);
+            color: white;
+        }
+
+        .desarrollo-header .header__title {
+            color: white;
+            font-size: 2.3rem;
+        }
+
+        .desarrollo-header .header__subtitle {
+            color: #e0e0e0;
+            font-size: 1.6rem;
+        }
+
+        .desarrollo-header .header__h3 {
+            color: #cccccc;
+        }
+
+        .linkcontainer__a {
+            background-color: inherit;
+        }
+        .linkcontainer__a i{ color: #ffcc00;}
+
+
+
+        .servicios-desarrollo {
+            padding: 80px 0;
+            background-color: var(--background-alt);
+        }
+
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .servicio-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .servicio-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .servicio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+        }
+
+        .servicio-icon {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .servicio-icon i {
+            color: var(--primary);
+        }
+
+        .servicio-card h3 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .servicio-lista {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .servicio-lista li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .servicio-lista li::before {
+            content: '▸';
+            color: var(--primary);
+            position: absolute;
+            left: -15px;
+        }
+
+        .tecnologias {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            background: var(--primary);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .proceso-desarrollo {
+            padding: 80px 0;
+        }
+
+        .proceso-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .proceso-step {
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .proceso-step h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .proyectos-destacados {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .proyecto-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .proyecto-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .proyecto-image {
+            margin-bottom: 20px;
+        }
+
+        .proyecto-image i {
+            color: var(--primary);
+        }
+
+        .proyecto-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .proyecto-details {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .proyecto-category, .proyecto-time {
+            background: var(--background-alt);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .tecnologias-section {
+            padding: 80px 0;
+        }
+
+        .tecnologias-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .tecnologia-category {
+            background: var(--background-alt);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .tecnologia-category h3 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .tecnologias-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .tecnologia-item {
+            background: white;
+            color: var(--primary);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 2px solid var(--primary);
+        }
+
+        .cotizacion-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, #002244 100%);
+            color: white;
+        }
+
+        .cotizacion-section h2 {
+            color: white;
+        }
+
+        .cotizacion-section h2 span {
+            color: #ffcc00;
+        }
+
+        .cotizacion-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .cotizacion-beneficios {
+            margin: 25px 0;
+        }
+
+        .cotizacion-beneficios li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cotizacion-beneficios i {
+            color: #ffcc00;
+        }
+
+        .formulario-cotizacion {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .btn-cotizacion {
+            width: 100%;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-cotizacion:hover {
+            background: #1ea952;
+        }
+
+        .ventajas-section {
+            padding: 80px 0;
+        }
+
+        .ventajas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .ventaja-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .ventaja-card i {
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .ventaja-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .servicios-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .proceso-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .proyectos-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tecnologias-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cotizacion-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .ventajas-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
