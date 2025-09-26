@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reparación de Equipos Recargables y Electrodomésticos - XaviTech</title>
+    <link rel="stylesheet" href="ccs/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="ccs/reperacion-electrodomesticos.css">
+</head>
+<body>
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5353599142?text=Hola,%20necesito%20reparar%20mi%20electrodoméstico%20o%20equipo%20recargable" 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chatear por WhatsApp"
+       title="Chatear por WhatsApp">
+        <i class="fab fa-whatsapp fa-2x"></i>
+        <span class="whatsapp-tooltip">¿Problemas con tu electrodoméstico?</span>
+    </a>
+
+    <!-- Barra de navegación -->
+    <nav class="nav">
+        <div class="nav__redes">
+            <a href="#" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="#" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" title="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+
+        <div class="nav__navbar">
+            <a href="main.html" class="nav__logo"><img src="images/logoblanco.png" alt="logo de la empresa"></a>
+            
+            <button class="nav__btn" id="menuBtn">☰</button>
+
+            <ul class="nav__list" id="navList">
+                <li class="nav__item">
+                    <a href="main.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Tienda" class="nav__link">Tienda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Desarrollo" class="nav__link">Desarrollo</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Reparaciones" class="nav__link">Reparaciones</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html#Contacto" class="nav__link">Contacto</a>
+                </li>
+            </ul>
+
+            <a href="main.html#Contacto" class="nav__contacto nav__link">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Header especializado -->
+    <header class="header electrodomesticos-header">
+        <div class="header__container">
+            <div class="header__titlecontainer">
+                <h1 class="header__title">
+                    Reparación de Electrodomésticos y Equipos Recargables
+                </h1>
+                <h2 class="header__subtitle">
+                    Especialistas en línea blanca y equipos portátiles
+                </h2>
+                <h3 class="header__h3">
+                    Reparaciones a domicilio y en taller
+                </h3>
+            </div>
+
+            <div class="header__linkcontainer">
+                <a href="#recargables" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-battery-full fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Equipos Recargables</h2>
+                </a>
+
+                <a href="#electrodomesticos" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-home fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Electrodomésticos</h2>
+                </a>
+
+                <a href="#domicilio" class="linkcontainer__a">
+                    <div class="icon__container">
+                        <i class="fas fa-truck fa-3x"></i>
+                    </div>
+                    <h2 class="icon__h2">Servicio a Domicilio</h2>
+                </a>
+            </div>
+
+            <div class="header__localizarreparacion">
+                <a href="https://wa.me/5353599142?text=Hola,%20necesito%20reparación%20de%20electrodoméstico%20o%20equipo%20recargable">
+                    ¡Solicitar Reparación!
+                </a>
+            </div>
+        </div>
+
+        <div class="header__imagen">
+            <img class="header__img" src="images/friorepair.png" alt="Reparación de electrodomésticos">
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Sección de equipos recargables -->
+        <section class="equipos-recargables" id="recargables">
+            <div class="container">
+                <h2><span>Equipos</span> Recargables que Reparamos</h2>
+                
+                <div class="equipos-grid">
+                    <div class="equipo-card">
+                        <div class="equipo-icon">
+                            <i class="fas fa-fan fa-3x"></i>
+                        </div>
+                        <h3>Ventiladores Recargables</h3>
+                        <ul class="equipo-lista">
+                            <li>Cambio de baterías</li>
+                            <li>Reparación de motores</li>
+                            <li>Arreglo de controles</li>
+                            <li>Cambio de aspas</li>
+                        </ul>
+                        <div class="equipo-precio">
+                            <span class="precio-desde">Desde $15</span>
+                        </div>
+                    </div>
+
+                    <div class="equipo-card">
+                        <div class="equipo-icon">
+                            <i class="fas fa-lightbulb fa-3x"></i>
+                        </div>
+                        <h3>Lámparas Recargables</h3>
+                        <ul class="equipo-lista">
+                            <li>Cambio de baterías Li-ion</li>
+                            <li>Reparación de circuitos LED</li>
+                            <li>Arreglo de interruptores</li>
+                            <li>Cambio de pantallas</li>
+                        </ul>
+                        <div class="equipo-precio">
+                            <span class="precio-desde">Desde $12</span>
+                        </div>
+                    </div>
+
+                    <div class="equipo-card">
+                        <div class="equipo-icon">
+                            <i class="fas fa-volume-up fa-3x"></i>
+                        </div>
+                        <h3>Parlantes Bluetooth</h3>
+                        <ul class="equipo-lista">
+                            <li>Cambio de baterías</li>
+                            <li>Reparación de altavoces</li>
+                            <li>Arreglo de conexión Bluetooth</li>
+                            <li>Cambio de circuitos de carga</li>
+                        </ul>
+                        <div class="equipo-precio">
+                            <span class="precio-desde">Desde $20</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="equipo-card">
+                        <div class="equipo-icon">
+                            <i class="fas fa-cut fa-3x"></i>
+                        </div>
+                        <h3>Máquinas de Cortar Pelo</h3>
+                        <ul class="equipo-lista">
+                            <li>Cambio de baterías</li>
+                            <li>Afiliado de cuchillas</li>
+                            <li>Limpieza y lubricación</li>
+                            <li>Reparación de motores</li>
+                        </ul>
+                        <div class="equipo-precio">
+                            <span class="precio-desde">Desde $18</span>
+                        </div>
+                    </div>
+
+                    <div class="equipo-card">
+                        <div class="equipo-icon">
+                            <i class="fas fa-camera fa-3x"></i>
+                        </div>
+                        <h3>Cámaras de Vigilancia</h3>
+                        <ul class="equipo-lista">
+                            <li>Reparación de circuitos</li>
+                            <li>Cambio de baterías</li>
+                            <li>Arreglo de conexión Wi-Fi</li>
+                            <li>Reparación de lentes</li>
+                        </ul>
+                        <div class="equipo-precio">
+                            <span class="precio-desde">Desde $25</span>
+                        </div>
+                    </div>
+
+                    <div class="equipo-card">
+                        <div class="equipo-icon">
+                            <i class="fas fa-gamepad fa-3x"></i>
+                        </div>
+                        <h3>Controles y Mandos</h3>
+                        <ul class="equipo-lista">
+                            <li>Cambio de baterías</li>
+                            <li>Reparación de botones</li>
+                            <li>Arreglo de joysticks</li>
+                            <li>Conexión Bluetooth/USB</li>
+                        </ul>
+                        <div class="equipo-precio">
+                            <span class="precio-desde">Desde $10</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de electrodomésticos -->
+        <section class="electrodomesticos-reparacion" id="electrodomesticos">
+            <div class="container">
+                <h2><span>Electrodomésticos</span> que Reparamos</h2>
+                
+                <div class="electrodomesticos-categorias">
+                    <div class="categoria-electro">
+                        <h3><i class="fas fa-snowflake"></i> Línea Blanca</h3>
+                        <div class="electro-grid">
+                            <div class="electro-item">
+                                <h4>Refrigeradores</h4>
+                                <p>Reparación de compresores, termostatos, sistemas de refrigeración</p>
+                                <span class="electro-precio">Desde $40</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Congeladores</h4>
+                                <p>Mantenimiento y reparación de sistemas de congelación</p>
+                                <span class="electro-precio">Desde $35</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Lavadoras</h4>
+                                <p>Reparación de motores, bombas de agua, tarjetas electrónicas</p>
+                                <span class="electro-precio">Desde $30</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Secadoras</h4>
+                                <p>Arreglo de sistemas de calefacción y ventilación</p>
+                                <span class="electro-precio">Desde $25</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categoria-electro">
+                        <h3><i class="fas fa-fire"></i> Cocina y Calefacción</h3>
+                        <div class="electro-grid">
+                            <div class="electro-item">
+                                <h4>Estufas Eléctricas</h4>
+                                <p>Reparación de resistencias, termostatos, controles</p>
+                                <span class="electro-precio">Desde $20</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Hornos Microondas</h4>
+                                <p>Reparación de magnetrones, placas electrónicas, puertas</p>
+                                <span class="electro-precio">Desde $25</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Aires Acondicionados</h4>
+                                <p>Mantenimiento, carga de gas, reparación de compresores</p>
+                                <span class="electro-precio">Desde $50</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Calentadores</h4>
+                                <p>Reparación de elementos calefactores y controles de temperatura</p>
+                                <span class="electro-precio">Desde $22</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="categoria-electro">
+                        <h3><i class="fas fa-blender"></i> Pequeños Electrodomésticos</h3>
+                        <div class="electro-grid">
+                            <div class="electro-item">
+                                <h4>Licuadoras</h4>
+                                <p>Reparación de motores, cuchillas, bases y controles</p>
+                                <span class="electro-precio">Desde $15</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Batidoras</h4>
+                                <p>Arreglo de ejes, engranajes y sistemas de velocidad</p>
+                                <span class="electro-precio">Desde $12</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Cafeteras</h4>
+                                <p>Reparación de sistemas de calentamiento y bombeo</p>
+                                <span class="electro-precio">Desde $18</span>
+                            </div>
+                            <div class="electro-item">
+                                <h4>Planchas de Ropa</h4>
+                                <p>Arreglo de placas, termostatos y sistemas de vapor</p>
+                                <span class="electro-precio">Desde $10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de servicio a domicilio -->
+        <section class="servicio-domicilio" id="domicilio">
+            <div class="container">
+                <div class="domicilio-content">
+                    <div class="domicilio-text">
+                        <h2><span>Servicio</span> a Domicilio</h2>
+                        <p>¿Tu electrodoméstico no se puede mover? No hay problema, vamos hasta tu casa.</p>
+                        
+                        <div class="domicilio-beneficios">
+                            <div class="beneficio-domicilio">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Mismo Día</h4>
+                                    <p>Servicio urgente disponible</p>
+                                </div>
+                            </div>
+                            <div class="beneficio-domicilio">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <h4>Reparación en Sitio</h4>
+                                    <p>70% de las reparaciones las hacemos en el momento</p>
+                                </div>
+                            </div>
+                            <div class="beneficio-domicilio">
+                                <i class="fas fa-dollar-sign"></i>
+                                <div>
+                                    <h4>Presupuesto Previo</h4>
+                                    <p>Te damos el precio antes de comenzar</p>
+                                </div>
+                            </div>
+                            <div class="beneficio-domicilio">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <h4>Garantía Incluida</h4>
+                                    <p>Todas nuestras reparaciones tienen garantía</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="domicilio-precios">
+                            <h3>Tarifas de Servicio a Domicilio</h3>
+                            <div class="precios-list">
+                                <div class="precio-item">
+                                    <span>Zona Céntrica</span>
+                                    <span>$10</span>
+                                </div>
+                                <div class="precio-item">
+                                    <span>Zona Residencial</span>
+                                    <span>$15</span>
+                                </div>
+                                <div class="precio-item">
+                                    <span>Zona Periférica</span>
+                                    <span>$20</span>
+                                </div>
+                                <div class="precio-item">
+                                    <span>Urgencias (24/7)</span>
+                                    <span>+$10 adicional</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5353599142?text=Hola,%20necesito%20servicio%20a%20domicilio%20para%20reparación%20de%20electrodoméstico" class="btn-domicilio">
+                            <i class="fas fa-truck"></i>
+                            Solicitar Servicio a Domicilio
+                        </a>
+                    </div>
+                    <div class="domicilio-image">
+                        <img src="images/aire1.jpg" alt="Servicio técnico a domicilio">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de diagnóstico gratuito -->
+        <section class="diagnostico-electrodomesticos">
+            <div class="container">
+                <h2><span>Diagnóstico</span> Gratuito</h2>
+                <div class="diagnostico-grid">
+                    <div class="diagnostico-card">
+                        <i class="fas fa-search fa-3x"></i>
+                        <h3>Evaluación Completa</h3>
+                        <p>Revisamos tu equipo completamente para identificar el problema real</p>
+                    </div>
+                    <div class="diagnostico-card">
+                        <i class="fas fa-clipboard-list fa-3x"></i>
+                        <h3>Presupuesto Detallado</h3>
+                        <p>Te entregamos un presupuesto claro sin sorpresas</p>
+                    </div>
+                    <div class="diagnostico-card">
+                        <i class="fas fa-clock fa-3x"></i>
+                        <h3>Entrega Rápida</h3>
+                        <p>80% de las reparaciones listas en 24-48 horas</p>
+                    </div>
+                </div>
+
+                <div class="diagnostico-cta">
+                    <p>Trae tu equipo o solicita nuestro servicio a domicilio para un diagnóstico sin costo</p>
+                    <div class="diagnostico-buttons">
+                        <a href="https://wa.me/5353599142?text=Hola,%20quiero%20un%20diagnóstico%20gratuito%20para%20mi%20electrodoméstico" class="btn-diagnostico">
+                            Solicitar Diagnóstico
+                        </a>
+                        <a href="tel:+5353599142" class="btn-llamar">
+                            <i class="fas fa-phone"></i>
+                            Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de marcas que reparamos -->
+        <section class="marcas-electrodomesticos">
+            <div class="container">
+                <h2><span>Marcas</span> que Reparamos</h2>
+                <div class="marcas-grid">
+                    <div class="marca-item">Samsung</div>
+                    <div class="marca-item">LG</div>
+                    <div class="marca-item">Mabe</div>
+                    <div class="marca-item">Whirlpool</div>
+                    <div class="marca-item">General Electric</div>
+                    <div class="marca-item">Philips</div>
+                    <div class="marca-item">Oster</div>
+                    <div class="marca-item">Black+Decker</div>
+                    <div class="marca-item">Hamilton Beach</div>
+                    <div class="marca-item">y muchas más...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de emergencias -->
+        <section class="emergencias-electrodomesticos">
+            <div class="container">
+                <div class="emergencia-content">
+                    <div class="emergencia-text">
+                        <h2><span>¿Emergencia?</span> Servicio 24/7</h2>
+                        <p>Problemas con tu refrigerador, aire acondicionado o equipo esencial? Tenemos servicio de emergencia.</p>
+                        
+                        <div class="emergencia-features">
+                            <div class="emergencia-feature">
+                                <i class="fas fa-bolt"></i>
+                                <span>Respuesta inmediata</span>
+                            </div>
+                            <div class="emergencia-feature">
+                                <i class="fas fa-moon"></i>
+                                <span>Servicio nocturno</span>
+                            </div>
+                            <div class="emergencia-feature">
+                                <i class="fas fa-calendar-week"></i>
+                                <span>Fines de semana</span>
+                            </div>
+                        </div>
+
+                        <div class="emergencia-contacto">
+                            <h3>Contacto de Emergencia</h3>
+                            <div class="contacto-items">
+                                <a href="tel:+5353599142" class="contacto-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+53 53599142</span>
+                                </a>
+                                <a href="https://wa.me/5353599142?text=EMERGENCIA:%20Necesito%20reparación%20urgente%20de%20electrodoméstico" class="contacto-item">
+                                    <i class="fab fa-whatsapp"></i>
+                                    <span>WhatsApp Urgente</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emergencia-image">
+                        <img src="images/emergencia-electrodomesticos.jpg" alt="Servicio de emergencia">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="tel:+5353599142">+53 53599142</a>
+        <img src="images/logoblanco.png" alt="XaviTech">
+        
+        <div class="footer__redes">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.link/mlszmh" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <div class="footer__list-container">
+            <h2>Reparación de Electrodomésticos</h2>
+            <ul class="footer__lista">
+                <li><a href="#">Reparación de refrigeradores</a></li>
+                <li><a href="#">Reparación de lavadoras</a></li>
+                <li><a href="#">Reparación de aires acondicionados</a></li>
+                <li><a href="#">Reparación de cocinas</a></li>
+                <li><a href="#">Ventiladores recargables</a></li>
+                <li><a href="#">Lámparas recargables</a></li>
+                <li><a href="#">Parlantes Bluetooth</a></li>
+                <li><a href="#">Servicio a domicilio</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/wsp.js"></script>
+    
+</body>
+</html>
