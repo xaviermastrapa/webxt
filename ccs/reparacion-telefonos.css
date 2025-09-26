@@ -1,0 +1,327 @@
+
+        /* Estilos específicos para la página de reparación de móviles */
+        .reparacion-moviles-header {
+            background: linear-gradient(135deg, var(--primary) 0%, #3e4443 100%);
+            color: white;
+        }
+
+        .reparacion-moviles-header .header__title {
+            color: white;
+            font-size: 2.2rem;
+        }
+
+        .reparacion-moviles-header .header__subtitle {
+            color: #e0e0e0;
+            font-size: 1.5rem;
+        }
+
+        .reparacion-moviles-header .header__h3 {
+            color: #cccccc;
+        }
+
+        .servicios-rapidos {
+            padding: 80px 0;
+            background-color: var(--background-alt);
+        }
+
+
+        .linkcontainer__a{
+            background: inherit;
+        }
+
+        .icon__container i{
+            color: #ffcc00;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+
+
+        .servicios-rapidos__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .servicio-rapido__card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .servicio-rapido__card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .servicio-rapido__icon {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .servicio-rapido__icon i {
+            color: var(--primary);
+            font-size: 3rem;
+        }
+
+        .tiempo {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: var(--accent);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .servicio-rapido__card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .servicio-rapido__card .precio {
+            display: block;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+
+        .marcas-moviles {
+            padding: 80px 0;
+        }
+
+        .marcas-moviles__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .marca-movil__item {
+            text-align: center;
+            padding: 20px;
+            background: var(--background-alt);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .marca-movil__item:hover {
+            transform: scale(1.05);
+        }
+
+        .marca-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .marca-movil__item h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .problemas-especificos {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .problemas__categoria {
+            margin-bottom: 50px;
+        }
+
+        .problemas__categoria h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .problemas__lista {
+            display: grid;
+            gap: 20px;
+        }
+
+        .problema__item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .problema__item i {
+            color: var(--primary);
+            font-size: 2rem;
+            width: 50px;
+            text-align: center;
+        }
+
+        .problema__item h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .reparacion-tablets {
+            padding: 80px 0;
+        }
+
+        .tablets__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .tablets__lista {
+            margin: 20px 0;
+        }
+
+        .tablets__lista li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .tablets__lista i {
+            color: var(--accent);
+        }
+
+        .servicios-tablets__grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .servicio-tablet {
+            background: var(--background-alt);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .servicio-tablet h4 {
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .garantia-promociones {
+            padding: 80px 0;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .garantia-promociones__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .garantia__card, .promocion__card {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .garantia__card i, .promocion__card i {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .emergencia-moviles {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            color: white;
+        }
+
+        .emergencia__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .emergencia__content h2 {
+            color: white;
+        }
+
+        .emergencia__content h2 span {
+            color: #ffcc00;
+        }
+
+        .emergencia__features {
+            margin: 30px 0;
+        }
+
+        .emergencia__feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .emergencia__feature i {
+            color: #ffcc00;
+            font-size: 1.5rem;
+        }
+
+        .btn-emergencia {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #ffcc00;
+            color: #333;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-emergencia:hover {
+            background: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .servicios-rapidos__grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .marcas-moviles__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .tablets__content {
+                grid-template-columns: 1fr;
+            }
+            
+            .emergencia__content {
+                grid-template-columns: 1fr;
+            }
+            
+            .problemas__lista {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Icono personalizado para pantalla rota */
+        .fa-cracked-glass:before {
+            content: "💥";
+            font-style: normal;
+        }
